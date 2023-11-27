@@ -23,4 +23,18 @@ public class CustomerService {
 		return customer;
 	}
 	
+	public Customer addCustomer(Customer customer) {
+        return customerRepository.save(customer);
+    }
+
+    public void deleteCustomer(Long id) {
+        customerRepository.deleteById(id);
+    }
+
+    public Customer updateCustomer(Customer customer) {
+        return customerRepository.save(customer);
+    }
+		
+	
+	
 }
